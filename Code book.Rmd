@@ -1,0 +1,79 @@
+## Codebook for run_analysis.R
+
+1. Data. The data for this project is publicly avaiable from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Information on the case can also found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+2. The run_analysis.R script can be found here:https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/run_analysis.R along with details on how to run the scrip in the readme.rmd which can be found here https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/README.Rmd
+
+2. Basic information: the final dataset - titled 'tidydata' - consists of 180 rows and 69 columns
+- this includes two columns contains 'subject' and 'activity' (both integers) which are found in column 1 and 2, respectively. 66 of the variables are mean of measurements by activity and subject, and the last column (69) is the ActivityType
+
+3. The dataset contains the following variable (column) names:
+- subject
+- activity
+- Time.BodyAccelerometer.Mean.X
+- Time.BodyAccelerometer.Mean.Y
+- Time.BodyAccelerometer.Mean.Z
+- Time.BodyAccelerometer.Std..X
+- Time.BodyAccelerometer.Std..Y
+- Time.BodyAccelerometer.Std..Z
+- Time.GravityAccelerometer.Mean.X
+- Time.GravityAccelerometer.Mean.Y
+- Time.GravityAccelerometer.Mean.Z
+- Time.GravityAccelerometer.Std..X
+- Time.GravityAccelerometer.Std..Y
+- Time.GravityAccelerometer.Std..Z
+- Time.BodyAccelerometerJerk.Mean.X
+- Time.BodyAccelerometerJerk.Mean.Y
+- Time.BodyAccelerometerJerk.Mean.Z
+- Time.BodyAccelerometerJerk.Std..X
+- Time.BodyAccelerometerJerk.Std..Y
+- Time.BodyAccelerometerJerk.Std..Z
+- Time.BodyGyroscope.Mean.X
+- Time.BodyGyroscope.Mean.Y
+- Time.BodyGyroscope.Mean.Z
+- Time.BodyGyroscope.Std..X
+- Time.BodyGyroscope.Std..Y
+- Time.BodyGyroscope.Std..Z
+- Time.BodyGyroscopeJerk.Mean.X
+- Time.BodyGyroscopeJerk.Mean.Y
+- Time.BodyGyroscopeJerk.Mean.Z
+- Time.BodyGyroscopeJerk.Std..X
+- Time.BodyGyroscopeJerk.Std..Y
+- Time.BodyGyroscopeJerk.Std..Z
+- Time.BodyAccelerometerMagnitude.Mean
+- Time.BodyAccelerometerMagnitude.Std
+- Time.GravityAccelerometerMagnitude.Mean
+- Time.GravityAccelerometerMagnitude.Std
+- Time.BodyAccelerometerJerkMagnitude.Mean
+- Time.BodyAccelerometerJerkMagnitude.Std
+- Time.BodyGyroscopeMagnitude.Mean
+- Time.BodyGyroscopeMagnitude.Std
+- Time.BodyGyroscopeJerkMagnitude.Mean
+- Time.BodyGyroscopeJerkMagnitude.Std
+- fBodyAccelerometer.Mean.X
+- fBodyAccelerometer.Mean.Y
+- fBodyAccelerometer.Mean.Z
+- fBodyAccelerometer.Std..X
+- fBodyAccelerometer.Std..Y
+- fBodyAccelerometer.Std..Z
+- fBodyAccelerometerJerk.Mean.X
+- fBodyAccelerometerJerk.Mean.Y
+- fBodyAccelerometerJerk.Mean.Z
+- fBodyAccelerometerJerk.Std..X
+- fBodyAccelerometerJerk.Std..Y
+- fBodyAccelerometerJerk.Std..Z
+- fBodyGyroscope.Mean.X
+- fBodyGyroscope.Mean.Y
+- fBodyGyroscope.Mean.Z
+- fBodyGyroscope.Std..X
+- fBodyGyroscope.Std..Y
+- fBodyGyroscope.Std..Z
+- fBodyAccelerometerMagnitude.Mean
+- fBodyAccelerometerMagnitude.Std
+- fBodyAccelerometerJerkMagnitude.Mean
+- fBodyAccelerometerJerkMagnitude.Std
+- fBodyGyroscopeMagnitude.Mean
+- fBodyGyroscopeMagnitude.Std
+- fBodyGyroscopeJerkMagnitude.Mean
+- fBodyGyroscopeJerkMagnitude.Std
+- ActivityType
