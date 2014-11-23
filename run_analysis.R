@@ -54,4 +54,6 @@ names(data.mean.std.wlabel) <- gsub("BodyBody", "Body", names(data.mean.std.wlab
 ##Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 tidydata<-aggregate(. ~subject + activity, data.mean.std.wlabel, mean)
 tidydata<-tidydata[order(tidydata$subject, tidydata$activity),]
-write.table(tidydata, file = "./Desktop/UCI HAR Dataset/data_mean.std.avgbysubject.txt")
+write.table(tidydata, file = "./Desktop/UCI HAR Dataset/tidydata.txt")
+
+
