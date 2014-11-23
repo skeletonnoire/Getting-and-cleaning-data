@@ -1,7 +1,7 @@
 
 # Instructions for run_analysis.R
 
-1. Merges the training and the test sets to create one data set
+Merge the training and the test sets to create one data set
 To complete this first step you need to:
 - download the zipfile and unzip it.
 - in this first step you need to download all the train and test data, which consist of 6 different file
@@ -11,30 +11,24 @@ To complete this first step you need to:
 - finally, merge the test and train data sets with the rbind function.
 - at this stage it might also be worth getting the column names. To do this load the 'features' file into R, and assign the features to the main data (x_train and x_test), and input  the column heading for 'activity' (y_train and y_test) and 'subject'
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement
+Extracts only the measurements on the mean and standard deviation for each measurement
 - if you haven't already done so, you need to first load the 'features' file
 - extract the variables that containts 'mean' or 'std'
 - create a new subset of the original data, which only contains the variables which are capturing either mean or standard deviation information, and remember to add 'subject' and 'activity' to the file too.
 
-3. Uses descriptive activity names to name the activities in the data set
+Uses descriptive activity names to name the activities in the data set
 - for the next part first load the 'activity_labels' file into R
 - ensure the "plyr" package is installed. Run the 'require("plyr") command to activate it
 - name the columns in the 'activity_labels' file. I labelled the ID 'activity' and the second column 'ActivityType'
 - You can now merge the file from step2 - the mean and std file - with the 'activity_labels' file, using the 'join' function.
 - save it as a new file to keep track of all the different steps.
 
-4. Appropriately label the data set with descriptive names. 
+Appropriately label the data set with descriptive names. 
 - first pick up the data dictionary and identify appropriate naming convensions
 - using gsub, you can then identify acronyms (e.g. freq, Gyro) and substitute these for their full names (e.g. Frequency, Gyroscope). 
 - As you are not changing the content of the file, I suggest simply overwriting the file you saved in step 3.
 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+Create a second, independent tidy data set with the average of each variable for each activity and each subject
 - There are a few options for this last step, including the 'melt' command, but I received an error when using it. Instead I optioned for the 'aggregate' command, but the 'ddply' option would give the same result
 - save the tidy data as a new file using the write.table command
 
-
-
-#
-#
-#
-#
