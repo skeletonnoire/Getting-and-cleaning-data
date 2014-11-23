@@ -1,13 +1,13 @@
 ## Codebook for run_analysis.R
 
-1. Data. The data for this project is publicly avaiable from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Information on the case can also found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The data for this project is publicly avaiable from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Information on the case can also found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-2. The run_analysis.R script can be found here:https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/run_analysis.R along with details on how to run the scrip in the readme.rmd which can be found here https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/README.Rmd
+The run_analysis.R script can be found here:https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/run_analysis.R along with details on how to run the scrip in the readme.rmd which can be found here https://github.com/skeletonnoire/Getting-and-cleaning-data/blob/master/README.Rmd
 
-2. Basic information: the final dataset - titled 'tidydata' - consists of 180 rows and 69 columns
+Basic information: the final dataset - titled 'tidydata' - consists of 180 rows and 69 columns
 - this includes two columns contains 'subject' and 'activity' (both integers) which are found in column 1 and 2, respectively. 66 of the variables are mean of measurements by activity and subject, and the last column (69) is the ActivityType
 
-3. The dataset contains the following variable (column) names:
+The dataset contains the following variable (column) names:
 - subject
 - activity
 - Time.BodyAccelerometer.Mean.X
